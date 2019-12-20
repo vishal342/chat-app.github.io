@@ -1,0 +1,324 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    overflow-x: hidden;
+}
+body{
+    background-image: url(../images/bo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.logo{
+    position: fixed;
+    left: 0;
+    top: -15px;
+    
+}
+.logo img{
+    width: 18%;
+}
+.person{
+    overflow-x: auto;
+    border: 1px solid #222;
+    background: rgb(255,255,255);
+background: linear-gradient(337deg, rgba(255,255,255,1) 0%, rgba(233,233,233,1) 79%);
+    border-radius: 10px;
+   
+}
+
+.contact{
+    width: 100%;
+    height: 400px;
+    border: 1px solid green;
+    overflow-y: scroll;
+    background: rgb(37,211,102);
+background: linear-gradient(34deg, rgba(37,211,102,1) 0%, rgba(14,98,179,0.6895133053221288) 79%);
+}
+.conversation{
+    border: 1px solid green;
+    background-image: url(../images/backgroung.jpg);
+    height: auto;
+    background-size: 100%;
+}
+
+.person-name{
+    position: absolute;
+    background-color: #25d366;
+    width: 100%;
+    left: 0;
+    color: #fff;
+    
+    
+}
+
+.tab-content{
+    margin-top: 70px;
+    color: white;
+}
+.templates{
+    list-style: none;
+}
+.templates li{
+    background-color:#dadada;
+    margin-bottom: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#send{
+   margin-left: 60%;
+    color: #222;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 8px 10px;
+    display: none;
+    max-width: 240px;
+    margin-bottom: 4px;
+    
+}
+#receive{
+    
+    color: #fff;
+     background-color: cornflowerblue;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 8px 10px;
+    display: none;
+    max-width: 240px;
+    margin-bottom: 4px
+    
+}
+#receive1{
+    
+    color: #222;
+     background-color: beige;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 3px 8px;
+    display: none;
+   width: 60px;
+   margin-bottom: 4px;
+    margin-right: 2px;   
+     margin-left: 50%;
+    
+}
+#receive2{
+    
+    color: #222;
+     background-color: beige;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 3px 8px;
+    display: none;
+   width: 60px;
+   margin-bottom: 4px;
+    margin-right: 2px;   
+     margin-left: 50%;
+    
+}
+#receive3{
+    
+   color: #222;
+     background-color: beige;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 3px 8px;
+    display: none;
+   width: 60px;
+   margin-bottom: 4px;
+    margin-right: 2px;   
+     margin-left: 50%;
+    
+}
+
+
+#send1{
+    
+    color: #fff;
+     background-color: cornflowerblue;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 8px 10px;
+    display: none;
+    width: 60px;
+   margin-bottom: 4px;
+   
+    
+}
+#send2{
+    
+    color: #fff;
+     background-color: cornflowerblue;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 8px 10px;
+    display: none;
+    width: 60px;
+   margin-bottom: 4px;
+   
+    
+}
+#send3{
+    
+    color: #fff;
+     background-color: cornflowerblue;
+    border-radius: 10px;
+     border-radius: 10px;
+    padding: 8px 10px;
+    display: none;
+    width: 60px;
+   margin-bottom: 4px;
+   
+    
+}
+.message-box{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 10px;
+}
+.message-box span{
+    width: 100%
+}
+.message-box input{
+    width: 90%;
+}
+.message-box i {
+    color: #fff;
+    font-size: 24px;
+    background-color:#25d366;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.mobile-frames h4{
+    text-align: center;
+}
+
+.phone-frame{
+    width: 180px;
+    height: 220px;
+    background-image: url(../images/phone-frame.png);
+    border: 5px solid #222;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background-position: center;
+    background-size: 100%;
+    overflow: auto;
+   
+    
+    
+}
+
+
+
+.message-box-phone{
+    position: absolute;
+    bottom: 0;
+}
+.message-box-phone input{
+    width: 80%;
+}
+.message-box-phone i{
+    cursor: pointer;
+}  
+
+.person i{
+    
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 25px;
+    color: #fff;
+
+}
+.temp{
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
+    cursor: pointer;
+}
+
+
+.sender{
+    width: 50%;
+    margin-left: 50%;
+    border-radius: 5px;
+    
+}
+.sender p{
+    background-color: #646b75;
+     border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+
+.receiver{
+    width: 50%;
+    
+    
+}
+.receiver p{
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+}
+
+.person a{
+    transition: 0.6s linear;
+}
+.person a:hover{
+    background-color: #25d366;
+}
+
+#send-button{
+    transition: 0.6s linear;
+}
+#send-button:hover{
+    
+    background-color:#4a8bcc;
+    
+}
+
+.phone-frame .sender{
+    margin-left: 0%;
+    
+}
+.phone-frame .sender p{
+    background-color: aqua;
+}
+
+.phone-frame .receiver{
+    margin-left: 50%;
+    
+}
+
+.phone-frame .receiver p{
+    background-color:#25d366;
+}
+.message-box-phone i{
+    transition: 0.6s linear;
+}
+
+.message-box-phone i:hover{
+    color: #25d366;
+}
+.ballon{
+    position: absolute;
+    right: -280px;
+    transition: 1s;
+    animation:up 1s infinite;
+    top: 265px;
+     
+}
+.ballon img{
+    width: 25%;
+}

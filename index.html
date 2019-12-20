@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Chat Applocation</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</head>
+
+<body>
+    <div class="logo"><img src="images/logo.png"></div>
+    <div class="ballon"><img src="images/ballon.gif"></div>
+
+    <div class="container contact">
+        <div class="row">
+            <div class="col-3">
+                <h4 style="color: #fff;text-align: center;">Contacts</h4>
+                <div class="nav flex-column nav-pills person" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                    <a class="nav-link  person-1" id="v-pills-home-tab" data-toggle="pill" href="#p1" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-user-edit"></i> Person-1 <span id="new" style="float: right;"></span></a>
+                    <a class="nav-link person-2" id="v-pills-profile-tab" data-toggle="pill" href="#p2" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-user-edit"></i> Person-2 <span id="new1" style="float: right;"></span></a>
+                    <a class="nav-link person-3" id="v-pills-messages-tab" data-toggle="pill" href="#p3" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-user-edit"></i> Person-3 <span id="new2" style="float: right;"></span></a>
+                    <a class="nav-link person-4" id="v-pills-settings-tab" data-toggle="pill" href="#p4" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-user-edit"></i> Person-4</a>
+                    <a class="nav-link person-5" id="v-pills-settings-tab" data-toggle="pill" href="#p5" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-user-edit"></i> Person-5</a>
+                    <a class="nav-link person-6" id="v-pills-settings-tab" data-toggle="pill" href="#p6" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-user-edit"></i> Person-6</a>
+                    <a class="nav-link person-7" id="v-pills-settings-tab" data-toggle="pill" href="#p7" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-user-edit"></i> Person-7</a>
+
+
+
+                </div>
+            </div>
+            <div class="col-7 conversation">
+                <div class="person-name">
+                    <h4 style="text-align: center">Conversation <span id="message-from" style="font-size: 14px;"></span></h4>
+                </div>
+                <div class="tab-content " id="v-pills-tabContent">
+                    <div class="tab-pane fade " id="p1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <h4 id="start" style="line-height: 200px;text-align: center;">Start Conversation 1</h4>
+                        <div class="sender">
+
+                        </div>
+                        <div class="receiver">
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="p2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <h4 id="start1" style="line-height: 200px;text-align: center;">Start Conversation 2 </h4>
+                        <div class="sender">
+
+                        </div>
+                        <div class="receiver">
+
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="p3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <h4 id="start2" style="line-height: 200px;text-align: center;">Start Conversation 3</h4>
+                        
+                        <div class="sender">
+
+                        </div>
+                        <div class="receiver">
+
+                        </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="p4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h4 style="line-height: 200px;text-align: center;">Start Conversation 4</h4>
+
+                    </div>
+                    <div class="tab-pane fade" id="p5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h4 style="line-height: 200px;text-align: center;">Start Conversation 5</h4>
+
+                    </div>
+                    <div class="tab-pane fade" id="p6" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h4 style="line-height: 200px;text-align: center;">Start Conversation 6</h4>
+
+                    </div>
+                    <div class="tab-pane fade" id="p7" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                        <h4 style="line-height: 200px;text-align: center;">Start Conversation 7</h4>
+
+                    </div>
+
+                </div>
+                <div class="message-box">
+                    <span> <input type="text" placeholder="Type Message" onfocus="this.placeholder = ''" 
+                                  onblur="this.placeholder='Type Message'"onfocus="this.value=''" id="myText"> <i class="fas fa-paper-plane" id="send-button" onclick="h()"></i></span>
+
+                </div>
+
+            </div>
+            <div class="col-md-2">
+                <div>
+                    <i class="fas fa-user-edit"></i>
+                    <p id="nam"> </p>
+                    <h4 style="color: #fff;text-align: center;">Templates</h4>
+                    <ul class="templates">
+                        <li id="t1">How Are You ?</li>
+                        <li id="t2">I am Good</li>
+                        <li id="t3">How You Doing ?</li>
+                        <li id="t4">Yes I am Fine</li>
+                        <li id=t5>Where Are you ?</li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mobile-frames">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h4>Person-1</h4>
+                <div class="phone-frame phone-frame-0">
+                     <div class="sender">
+
+                        </div>
+                      <div class="receiver">
+
+                        </div>
+
+                   
+                      
+
+                    <div class="message-box-phone">
+                        <span> <input type="text" placeholder="Type Message" onfocus="this.placeholder = ''" 
+                                      onblur="this.placeholder='Type Message'" id="myText1"> <i class="fas fa-paper-plane" onclick="myFunction1()"></i></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <h4>Person-2</h4>
+                <div class="phone-frame phone-frame-1">
+                   <div class="sender">
+
+                        </div>
+                      <div class="receiver">
+
+                        </div>
+                    <div class="message-box-phone">
+                        <span> <input type="text" placeholder="Type Message" onfocus="this.placeholder = ''" 
+                                      onblur="this.placeholder='Type Message'" id="myText2"> <i class="fas fa-paper-plane" onclick="myFunction2()"></i></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <h4>Person-3</h4>
+                <div class="phone-frame phone-frame-2">
+                     <div class="sender">
+
+                        </div>
+                      <div class="receiver">
+
+                        </div>
+                    <div class="message-box-phone">
+                        <span> <input type="text" placeholder="Type Message" onfocus="this.placeholder = ''"
+                                      
+                                      onblur="this.placeholder='Type Message'" id="myText3"> <i class="fas fa-paper-plane" onclick="myFunction3()"></i></span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        var values = [];
+
+        function h() {
+             document.getElementById('start').style.display = "none";
+
+            var x = document.getElementById('myText').value;
+            values.push(x);
+            console.log(values);
+            for (var i = 0; i < values.length; i++) {
+               
+                 if(values[i]!=""){
+                $('#p1 .sender').append("<p>" + values[i] + "</p>");
+                $('.phone-frame-0 .sender').append("<p>" + values[i] + "</p>");
+                 values[i] = "";
+                }
+            }
+            $('input[type="text"]').val('');
+        }
+
+    </script>
+    <script>
+          var values1 = [];
+        function myFunction1() {
+
+                var y = document.getElementById('myText1').value;
+            document.getElementById('new').innerHTML = "New Message";
+            document.getElementById('start').style.display = "none";
+             document.getElementById('message-from').innerHTML = "(Message From Person-1)";
+                values1.push(y);
+                console.log(values);
+                for (var i = 0; i < values1.length; i++) {
+                    if(values1[i]!=""){
+
+                    $('#p1 .receiver').append("<p>" + values1[i] + "</p>");
+                    $('.phone-frame-0 .receiver').append("<p>" + values1[i] + "</p>");
+                    values1[i] = "";
+                    }
+                }
+             $('input[type="text"]').val('');
+
+        }
+        
+        function myFunction2() {
+
+                var y = document.getElementById('myText2').value;
+            document.getElementById('new1').innerHTML = "New Message";
+            document.getElementById('start1').style.display = "none";
+             document.getElementById('message-from').innerHTML = "(Message From Person-2)";
+                values1.push(y);
+                console.log(values);
+                for (var i = 0; i < values1.length; i++) {
+                    if(values1[i]!=""){
+
+                    $('.phone-frame-1 .receiver').append("<p>" + values1[i] + "</p>");
+                    $('#p2 .receiver').append("<p>" + values1[i] + "</p>");
+                    values1[i] = "";
+                    }
+                }
+             $('input[type="text"]').val('');
+
+        }
+         function myFunction3() {
+
+                var y = document.getElementById('myText3').value;
+            document.getElementById('new2').innerHTML = "New Message";
+            document.getElementById('start2').style.display = "none";
+             document.getElementById('message-from').innerHTML = "(Message From Person-3)";
+                values1.push(y);
+                console.log(values);
+                for (var i = 0; i < values1.length; i++) {
+                    if(values1[i]!=""){
+
+                    $('.phone-frame-2 .receiver').append("<p>" + values1[i] + "</p>");
+                    $('#p3 .receiver').append("<p>" + values1[i] + "</p>");
+                    values1[i] = "";
+                    }
+                }
+              $('input[type="text"]').val('');
+        }
+
+    </script>
+    <script>
+        $('#t1').click(function() {
+
+            $('#myText').val($('#t1').text());
+        });
+
+        $('#t2').click(function() {
+
+            $('#myText').val($('#t2').text());
+        });
+
+
+        $('#t3').click(function() {
+
+            $('#myText').val($('#t3').text());
+        });
+
+
+        $('#t4').click(function() {
+
+            $('#myText').val($('#t4').text());
+        });
+
+
+        $('#t5').click(function() {
+
+            $('#myText').val($('#t5').text());
+        });
+        $('.person-1').click(function() {
+            
+              document.getElementById('new').innerHTML = "";
+            document.getElementById('nam').innerHTML = $('.person-1').text();
+        });
+        $('.person-2').click(function() {
+             document.getElementById('new1').innerHTML = "";
+
+            document.getElementById('nam').innerHTML = $('.person-2').text();
+        });
+        $('.person-3').click(function() {
+             document.getElementById('new2').innerHTML = "";
+
+            document.getElementById('nam').innerHTML = $('.person-3').text();
+        });
+        $('.person-4').click(function() {
+             document.getElementById('new').innerHTML = "";
+
+            document.getElementById('nam').innerHTML = $('.person-4').text();
+        });
+        $('.person-5').click(function() {
+             document.getElementById('new').innerHTML = "";
+
+            document.getElementById('nam').innerHTML = $('.person-5').text();
+        });
+
+    </script>
+</body>
+
+</html>
